@@ -16,7 +16,7 @@
             }
            
             .purple{
-              background-image: url(./assets/images/background-pattern-desktop.svg);
+              background-image: url(background-pattern-desktop.svg);
               width: 100%;
               height: 300px;
               position: relative;
@@ -99,7 +99,7 @@
             width: 20px;
           }
           .purple{
-            background-image: url(./assets/images/background-pattern-mobile.svg);
+            background-image: url(background-pattern-mobile.svg);
           }
         }
         

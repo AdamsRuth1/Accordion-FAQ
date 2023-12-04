@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    body {
+      font-family: var(--ff-main);
+      min-height: 100vh;
+      place-items: center;
+      background-color: hsl(0, 18%, 84%);
+     
+    }
+            .maindiv{
+              width: 100%;
+              
+            }
+           
+            .purple{
+              background-image: url(./assets/images/background-pattern-desktop.svg);
+              width: 100%;
+              height: 300px;
+              position: relative;
+            }
+           
+            .container{
+              background-color: rgb(244, 236, 236);
+              color: hsl(292, 42%, 14%);
+              max-width: 400px;
+              margin-left: 50px;
+              height: 420px;
+              border: 5px solid rgb(240, 230, 230);
+              border-radius: 20px;
+              position: absolute;
+              top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          box-shadow: 0 0 10px hsl(292, 16%, 49%);
+            }
+            .question{
+              border: none;
+              width: 365px;
+              padding: 10px;
+              background-color: rgb(235, 225, 225);
+              display: flex;
+              justify-content: space-between;
+              margin-left: 20px;
+              margin-bottom: 2px;
+              font-weight: bold;
+              font-size: 15px;
+            }
+            /* Add hover and focus styles for the question button */
+    .question:hover, .question:focus {
+      background-color: #f2f2f2;
+      cursor: pointer;
+    }
+          
+            /* css for answer div */
+            .answer{
+              padding: 10px;
+              margin-bottom: 10px;
+              background-color: white;
+              background-color: white;
+              margin-left: 20px;
+              border: 1px solid hsl(0, 16%, 93%);
+              display: none;
+              font-size: 15px;
+              color: hsl(292, 16%, 49%);
+    
+            }
+            .faq{
+              display: flex;
+              padding: 20px;
+              margin-left: 5px;
+            }
+            .star {
+              width: 30px;
+              margin-right: 10px;
+              margin-top: 3px;
+            }
+            .plus-icon{
+              width: 25px;
+            }
+    
+            /* mobile view */
+            @media screen and (min-width: 280px) and (max-width: 1024px) {
+          .container {
+            top: 40%;
+            width: 80%;
+            height: 450px;
+            left: 35%;
+            font-size: 10px;
+          }
+          .question{
+            width: 100% ;
+          max-width: 90%;
+          margin-left: 10px;
+          }
+          .star{
+            width: 20px;
+          }
+          .purple{
+            background-image: url(./assets/images/background-pattern-mobile.svg);
+          }
+        }
+        
